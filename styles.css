@@ -1,6 +1,7 @@
 body, html{
   height:100%;
 }
+
 body{
   margin: 0px;
   background-color:#444;
@@ -31,4 +32,12 @@ body, a:link, a:visited, a:active{
   background-color: #abc;
   width: 60px;
   height: 60px;
+}
+
+.slide{
+  background-image: url("https://media.tenor.com/images/36e2f86ffaa3d8140a6ea33d864e3914/tenor.gif");
+  position: absolute;
+  background-color: purple;
+  width: 160px;
+  height: 220px;
 }
