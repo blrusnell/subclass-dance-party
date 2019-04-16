@@ -27,7 +27,15 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
+    
+    $('.fade').mouseover(function() {
+      alert("Don't touch JT!");
+      $('.fade').appendTo('.saferoom');
+    });
+
     $('body').append(dancer.$node);
+
+
   });
 
 });

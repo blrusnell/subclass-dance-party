@@ -43,3 +43,9 @@ body, a:link, a:visited, a:active{
   height: 220px;
 }
 
+.saferoom{
+  position: absolute;
+  background-color: white;
+  width: 2600px;
+  height: 1200px;
+}
