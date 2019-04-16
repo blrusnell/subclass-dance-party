@@ -44,12 +44,19 @@ var Dancer = function(top, left, timeBetweenSteps) {
   // this.step(timeBetweenSteps);
   // this.setPosition(top, left);
   //return this;
+  this.top = top;
+  this.left = left;
+  this.timeBetweenSteps = timeBetweenSteps;
+
+  this.step();
+  this.setPosition(this.top, this.left);
 };
 
 Dancer.prototype.step = function() {
-  console.log('time between steps', timeBetweenSteps);
-  setTimeout(this.step, timeBetweenSteps);
-}(timeBetweenSteps);
+  console.log('dance is here', Dancer);
+  console.log('this.step is here', this);
+  setTimeout(this.step.bind(this), this.timeBetweenSteps);
+};
 
 Dancer.prototype.setPosition = function(top, left) {
   var styleSettings = {
@@ -57,4 +64,5 @@ Dancer.prototype.setPosition = function(top, left) {
     left: left
   };
   this.$node.css(styleSettings);
-}(top, left);
+};
+

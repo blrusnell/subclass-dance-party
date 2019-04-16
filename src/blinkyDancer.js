@@ -23,11 +23,13 @@
 
 /*
 ---------------------------------------------------------
+WE THINK THE PROBLEM IS IN HERE!!!
 */
 
 
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
@@ -35,8 +37,7 @@ BlinkyDancer.prototype = Object.create(Dancer.prototype);
 BlinkyDancer.prototype.constructor = BlinkyDancer;
 
 BlinkyDancer.prototype.step = function() {
-  var oldStep = Dancer.step.bind(this, timeBetweenSteps);
-  oldStep();
+  // var oldStep = Dancer.step.call(this, timeBetweenSteps);
+  // oldStep();
   this.$node.toggle();
-  
 };
