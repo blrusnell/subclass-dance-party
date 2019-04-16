@@ -25,3 +25,10 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.square{
+  position: absolute;
+  background-color: #abc;
+  width: 60px;
+  height: 60px;
+}
