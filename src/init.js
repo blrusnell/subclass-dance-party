@@ -30,7 +30,5 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
-  $('.slide').mouseover(function() {alert( "Do not touch John Travolta!"); });
-
 });
 

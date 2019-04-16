@@ -4,7 +4,7 @@ body, html{
 
 body{
   margin: 0px;
-  background-color:#444;
+  background-color: white;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -28,16 +28,18 @@ body, a:link, a:visited, a:active{
 }
 
 .square{
+  background-image: url("https://i.pinimg.com/originals/c5/3b/da/c53bda5fb2569fd32c3118f926e78415.gif");
   position: absolute;
-  background-color: #abc;
-  width: 60px;
-  height: 60px;
+  background-color: white;
+  width: 360px;
+  height: 320px;
 }
 
-.slide{
+.fade{
   background-image: url("https://media.tenor.com/images/36e2f86ffaa3d8140a6ea33d864e3914/tenor.gif");
   position: absolute;
-  background-color: purple;
+  background-color: white;
   width: 160px;
   height: 220px;
 }
+

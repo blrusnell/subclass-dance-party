@@ -1,6 +1,6 @@
 var SlideDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="slide"></span>');
+  this.$node = $('<span class="fade"></span>');
   this.setPosition(this.top, this.left);
 
 };
